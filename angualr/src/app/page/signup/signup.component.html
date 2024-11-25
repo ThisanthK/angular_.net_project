@@ -1,0 +1,62 @@
+<div class="login-Container">
+    <img src="../assets/login.jpg" alt="" />
+    <div class="signup-wrapper">
+       
+         
+        <form class="signup-left" [formGroup]="form" (ngSubmit)="onSubmit()"   >
+            <h2>Sign Up</h2>
+            <div class="user-details">
+                <p class="fullname" for="">FULLNAME</p>
+                <input class="input-box" type="text" placeholder="Fullname" formControlName="fullname" >
+                <div class="error-feedback" *ngIf="hasDisplayableError('fullname') && form.controls.fullname.hasError('required')"> 
+                    Please enter your fullname 
+                </div>
+
+                <p class="email" for="">E-MAIL</p>
+                <input class="input-box" type="email" placeholder="Email" formControlName="email" >
+                <div class="error-feedback" *ngIf="hasDisplayableError('email')">
+                    <div *ngIf="form.controls.email.hasError('required')">
+                        Please enter your email
+                    </div> 
+                    <div *ngIf="form.controls.email.hasError('email')">
+                        Please enter a valid email address
+                    </div> 
+                 </div>
+
+
+                <p class="password" for="">PASSWORD</p>
+                <input class="input-box" type="password" placeholder="Password" formControlName="password" >
+                <div class="error-feedback" *ngIf="hasDisplayableError('password')">
+                    <ng-container [ngSwitch]="form.controls.password.errors | firstKey">
+                        <div *ngSwitchCase="'required'">
+                            Please enter your password
+                        </div>
+                        <div *ngSwitchCase="'minlength'">
+                            Atleast 6 characters required.
+                        </div>
+                        <div *ngSwitchCase="'pattern'">
+                            atleast one special character required.
+                        </div>
+                    </ng-container>
+                 </div>
+
+
+                <p class="password" for="">CONFIRM PASSWORD</p>
+                <input class="input-box" type="password" placeholder="Confirm Password" formControlName="confirmpassword" >
+                <div class="error-feedback" *ngIf="hasDisplayableError('confirmpassword') && form.controls.confirmpassword.hasError('passwordMismatch')"> 
+                    Passwords doesn't match.
+                </div>
+
+            </div>
+            <a><button class="btn btn-signup" type="submit">Sign Up</button></a>
+            
+            
+        </form>
+        <div class="signup-right">
+            <h2>Welcome to Signup</h2>
+            <p>Already have account?</p>
+            <a routerLink="/login"><button class="btn btn-login">Login</button></a>
+            
+        </div>
+    </div>
+</div>

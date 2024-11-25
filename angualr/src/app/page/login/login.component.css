@@ -1,0 +1,135 @@
+img{
+    width: 100%;
+    height: 100vh;
+    margin:0px;  
+}
+
+div > img{
+    opacity: 0.8;
+}
+
+.login-wrapper {
+    display:flex;
+    position:absolute;
+    top:150px;
+    left:370px;
+    backdrop-filter: blur(10px);
+    opacity: 0.8;
+    
+}
+
+.login-left , .login-right{
+    width:400px;
+    height:390px;
+}
+
+.login-left{ 
+    background-color: white; 
+    padding-left:45px;
+
+}
+
+.login-right{
+    background-color:#A6A7FA;
+    padding-left:60px;
+    padding-top:60px;
+    /* opacity:0.8; */
+}
+
+.login-left > h2{
+    margin-left:125px;
+    width:80px;
+}
+
+.email , .password{
+    font-weight: bold; 
+    margin:10px 0px;  
+    width: 100px;
+    margin-left:10px;
+
+}
+
+.input-box{
+    color:white;
+    width:280px;
+    height:35px;
+    border-radius: 10px;
+    border-style: solid;
+    border:2px;
+    padding-left:15px;
+    margin-bottom:10px;
+    background-color:#333476 ;
+    font-size:14px;
+}
+
+.input-box::placeholder{
+    color:white;
+    font-size: 14px;
+}
+
+.btn{
+    font-size: 16px;
+}
+
+.btn-login{
+    width:280px;
+    height:35px;
+    background-color:#000610;
+    color:white;
+    margin-top:15px;
+    border-radius:10px;
+    border:none;
+    font-weight: 600;
+}
+
+.remember-forgot{
+    margin-top:20px;
+    font-size: 14px;
+    width:300px;
+    font-weight: 600;
+}
+
+.forgot{
+    margin-left:50px;   
+}
+
+.login-right > h2{
+    font-size: 35px;
+    font-weight: bolder;
+    width: 300px;    
+    margin-top:15px;
+    margin-bottom:10px;
+}
+
+.login-right > p{
+    font-size: 16px;
+    margin:10px 0px;
+    font-weight: 600;
+    width:180px;
+    margin-left:60px;
+}
+ .btn-signup{
+    border-radius:20px;
+    border:none;
+    font-weight: 600;
+    width: 120px;
+    height:35px;
+    margin-left:70px;
+    background-color:#000610;
+    color:white;
+}
+
+a{
+    text-decoration: none;
+    color:black;
+}
+
+.btn:hover{
+    background-color: #052254e2;
+}
+
+.btn-login:disabled {
+    background-color: #cccccc; 
+    cursor: not-allowed; 
+}
+

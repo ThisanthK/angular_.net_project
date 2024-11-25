@@ -1,0 +1,92 @@
+
+nav.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: rgb(194, 194, 228);
+    background-size: cover;
+    color: black;
+    font-weight: 600;
+}
+
+/* Left Side */
+.nav-left {
+    display: flex;
+    align-items: center;
+}
+
+.web.logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    border-radius: 25px;
+}
+
+.web.name {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* Right Side  */
+.nav-right {
+    display: flex;
+    align-items: center;
+    
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    margin:0;
+    padding: 0;
+}
+
+.nav-list li {
+    margin:0px 15px;
+}
+
+.nav-list a {
+    color:black;
+    text-decoration: none;
+    font-size: 18px;
+    
+}
+
+
+
+/* Buttons */
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #135c8d;
+    color: white;
+    cursor: pointer;
+    margin:0px 18px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+button a {
+    color:black;
+    text-decoration: none;
+}
+
+.nav-btn:hover {
+    background-color: #2f77a7;
+}
+/* 
+.login {
+    background-color: #e74c3c;
+} */
+
+/* .login:hover {
+    background-color: #c0392b;
+} */
+
+img{
+    height: 100vh;
+    width:100%;
+    background-repeat: no-repeat;
+}

@@ -1,0 +1,98 @@
+
+*{
+    margin:0px;
+    padding:0px;
+    
+}
+
+.modal-overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  z-index: 1000; 
+}
+
+.employee-container{
+    display: flex;
+    justify-content: center;
+}
+
+.employee-wrapper{
+    width:500px;
+    height: 400px;
+    background-color: rgb(232, 239, 239);
+    margin:10px;
+    border-radius: 10px;
+}
+
+.employee-form{
+    padding:10px;
+} 
+
+h3{
+    width: 150px;
+    height: 30px;
+    margin: 15px 0px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+svg{
+    float:right;
+}
+.input , .address{
+    padding-left:10px;
+    font-size:15px;
+    outline: none;
+    border-radius: 5px;
+    border:1px solid;
+}
+
+.input{
+    width: 230px;
+    height: 40px;
+    margin:0px 5px 5px 0px;
+}
+
+.gender{
+    margin:10px 0px;
+}
+
+.gender-field{
+    margin-left: 8px;
+}
+
+.address{
+    margin-top:10px;
+}
+
+.button{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.btn{
+    width:50px;
+    height: 30px;
+    font-size: 14;
+    background-color:#c2c2e4;
+    border-radius:5px;
+    border: 1px solid black;
+    cursor:pointer;
+    margin-left:5px;
+}
+
+.btn:hover{
+    background-color: #a4a4e6;
+}
+

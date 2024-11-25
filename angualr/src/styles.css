@@ -1,0 +1,25 @@
+*{
+    box-sizing: border-box;
+   
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    font-size: 16px;
+    background-image: url("https://www.google.com/url?sa%3Di%26url%3Dhttps%3A%2F%2Fwww.shutterstock.com%2Fsearch%2Fdata-center-background%26psig%3DAOvVaw1az_hzG9dFgQSyr1Ut0TIQ%26ust%3D1731503294789000%26source%3Dimages%26cd%3Dvfe%26opi%3D89978449%26ved%3D0CBQQjRxqFwoTCNDRwtnu1okDFQAAAAAdAAAAABAE");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* opacity: 0.8; */
+    /* backdrop-filter: blur(10px); */
+}
+
+/* form validation */
+.error-feedback{
+    font: size 0.9rem;
+    color:crimson;
+    margin:0.3rem !important;
+    margin: top 0.1rem !important;
+}

@@ -1,0 +1,29 @@
+<div>
+<nav class="header">
+    
+    <div class="navbar nav-left">
+        <img class="web logo" src="../assets/Company logo.jpg" alt="">
+        <span class="web name">Global Tech</span>
+    </div>
+    <div class="navbar nav-right">
+        <ul style="list-style-type:none" class="nav-list">
+            <li><a routerLink="/" >Home</a></li>
+            <li><a routerLink="/records">Records</a></li>
+            <li><a routerLink="/contact">Contact</a></li> 
+        </ul>
+        <ng-container *ngIf="this.auth.isAuthenticated();then Authenticated;else notAuthenticated">
+
+        </ng-container>
+
+        <ng-template #notAuthenticated>
+            <a routerLink="/login"><button class="nav-btn login">Login</button></a>
+            <a routerLink="/signup"><button class="nav-btn signup">Signup</button> </a> 
+        </ng-template>
+        <ng-template #Authenticated>
+            <a routerLink="/"><button class="nav-btn logout">Logout</button> </a>
+        </ng-template>
+        
+    </div>        
+</nav>
+
+</div>

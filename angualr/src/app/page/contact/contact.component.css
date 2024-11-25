@@ -1,0 +1,64 @@
+.contact-container{
+    background-image: url("D:\\POC\\Global Technology Website Task\\GlobalTech_UI\\global-Tech\\src\\assets\\contact_background.jpg");
+    width:100vw;
+    height: 100vh;
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* backdrop-filter: blur(); */
+    font-size: 20px;
+}
+
+
+.contact-header >h2 , .contact-header > p{
+    /* display:flex;
+    justify-content: space-around; */
+    margin-left:80px;
+    width:100%;
+    font-size:18px;
+}
+
+.contact-header > p{
+    width:600px;
+}
+
+
+.contact-header >  h2{
+    padding-top:50px;
+    margin-top:0px;
+    margin-bottom: 0px;
+    font-size: 35px;
+   
+}
+
+.contact-details{
+    margin-top:130px;    
+}
+
+svg{
+    border-radius: 15px;
+    position:relative;
+    top:5px;
+}  
+
+.details{
+    display: flex;
+    margin: 30px 20px 20px 70px;
+}
+
+.details > div{
+    position: relative;
+    bottom:10px;
+    padding-left:5px;
+}
+
+.details p{
+    padding:0px;
+    margin-top:10px;
+    margin-bottom:0px;
+    width:300px;
+}
+
+.details p:last-child{
+    margin:0px;
+}

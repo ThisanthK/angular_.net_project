@@ -1,0 +1,77 @@
+.heading{
+    margin-top:30px;
+    padding:15px;
+    height: 70px;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading > h2, .heading>button{
+    display:inline;
+   
+
+}
+.heading >h2{
+    margin-left: 30px;
+    height: 70px;
+}
+
+
+.table{
+    padding:30px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 1625px;
+}
+  
+td, th {
+    border: 1px solid black;
+    text-align: left;
+    padding: 8px;
+}
+
+thead > tr{
+    background-color:rgb(194, 194, 228);
+}
+
+.btn{
+    border-radius: 10px;
+    border: 0px solid black; 
+    color: white; 
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn-edit,.btn-delete{
+    margin-bottom: 5px; 
+    margin-left:10px;
+    height:30px;
+    width: 50px;
+}
+
+.btn-edit{
+    background-color:green;
+}
+
+.btn-delete{
+    background-color:red;
+}
+
+.btn-addemployee{
+    width:100px;
+    height: 40px;
+    background-color:#135c8d;
+    font-size: 14px;
+    padding:5px;
+    float: inline-end;
+    margin-right:50px;
+    /* margin-top:50px; */
+
+}
+
+.btn-addemployee:hover {
+    background-color: #2f77a7;
+    font-size: 13px;
+}

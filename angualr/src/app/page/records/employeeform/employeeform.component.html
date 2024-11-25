@@ -1,0 +1,42 @@
+
+<div class="modal-overlay">
+    <div class="employee-container">
+        <form class="employee-wrapper" [formGroup]="formDetails" (ngSubmit)="onSubmit()" autocomplete="off">
+            <div class="employee-form">
+                <div class="form-heading">
+                    <h3>Employee Form</h3>
+                <!-- <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg> -->
+                </div>
+                
+                <div class="inputsform">
+                    <section>
+                        <input class="input empid" type="number" placeholder="Id" formControlName="empId">
+                        <input class="input name" type="text" placeholder="Name" formControlName="name">
+                    </section>
+                    <section>
+                        <input class="input role" type="text" placeholder="Role" formControlName="role">
+                        <input class="input email" type="email" placeholder="Email" formControlName="email">
+                    </section>
+                    <section class="gender">
+                        <span class="gender-field">Gender</span>
+                        <input class="gender-field" type="radio" value="Male" formControlName="gender"><label>Male</label>
+                        <input class="gender-field" type="radio" value="Female" formControlName="gender"><label>Female</label>
+                        <input class="gender-field" type="radio" value="Others" formControlName="gender"><label>Others</label>
+                    </section>
+                    <section>
+                        <input class="input dob" type="date" placeholder="Date of birth" formControlName="dob">
+                        <input class="input phone" type="number" placeholder="Phone No" formControlName="phoneNo">
+                    </section>
+                    <section>
+                        <textarea class="address" rows="4" cols="53" placeholder="Address" formControlName="address"></textarea>
+                    </section>
+                </div>
+            </div> 
+            <div class="button"> 
+                <button type="submit" class="btn btn-submit">Submit</button>
+                <button type="button" (click)="close()" class="btn btn-close">Close</button>
+            </div>       
+        </form>
+    </div>
+</div>
+

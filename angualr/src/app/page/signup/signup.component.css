@@ -1,0 +1,117 @@
+img{
+    width: 100%;
+    height: 100vh;
+    margin:0px;  
+}
+
+div > img{
+    opacity: 0.8;
+}
+
+.signup-wrapper {
+    display:flex;
+    position:absolute;
+    top:90px;
+    left:370px;
+    backdrop-filter: blur(10px);
+    opacity: 0.8;
+    
+}
+
+.signup-left , .signup-right{
+    width:400px;
+    height:540px;
+}
+
+.signup-left{ 
+    background-color: white; 
+    padding-left:40px;
+
+}
+
+.signup-right{
+    background-color:#A6A7FA;
+    padding-left:60px;
+    padding-top:120px;
+    /* opacity:0.8; */
+}
+
+.signup-left > h2{
+    margin-left:130px;
+    width:100px;
+}
+
+.fullname , .password , .email{
+    font-weight: bold; 
+    margin:10px 0px;  
+    width: 200px;
+    margin-left:10px;
+
+}
+
+.input-box{
+    color:white;
+    width:280px;
+    height:35px;
+    border-radius: 10px;
+    border-style: solid;
+    border:2px;
+    padding-left:15px;
+    margin-bottom:10px;
+    background-color:#333476 ;
+    font-size:14px;
+}
+
+.input-box::placeholder{
+    color:white;
+    font-size: 14px;
+}
+
+.btn{
+    font-size: 16px;
+}
+
+.btn-signup{
+    width:280px;
+    height:35px;
+    background-color:#000610;
+    color:white;
+    margin-top:15px;
+    border-radius:10px;
+    border:none;
+    font-weight: 600;
+}
+
+.signup-right > h2{
+    font-size: 32px;
+    font-weight: bolder;
+    width: 350px;    
+    margin-top:15px;
+    margin-bottom:10px;
+}
+
+.signup-right > p{
+    font-size: 16px;
+    margin:10px 0px;
+    font-weight: 600;
+    width:180px;
+    margin-left:60px;
+}
+
+.btn-login{
+    border-radius:20px;
+    border:none;
+    font-weight: 600;
+    width: 120px;
+    height:35px;
+    margin-left:80px;
+    background-color:#000610;
+    color:white;
+}
+
+.btn:hover{
+    background-color: #052254e2;
+}
+
+
+
